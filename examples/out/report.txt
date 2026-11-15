@@ -1,0 +1,14 @@
+trending-forecast-bench 1.0.0
+archive: 5 snapshots 2026-11-11..2026-11-15 (daily list)
+cohort: 38 repos | 26 debuts | 26 re-entry repos | 22 one-hit | 5 stayers(>=3d) | median 1.0 days
+backtest: 4 transitions, k = today's list size
+  predictor        prec   recall       f1
+  persistence    0.4535   0.4170   0.4305
+  velocity       0.2785   0.2785   0.2759
+  recency        0.3676   0.3436   0.3517
+  control        0.3484   0.3228   0.3317
+  control = same outsider budget, pseudo-random picks (falsification check)
+re-entry recall (of 3 re-entries): persistence 0.000 | velocity 0.000 | recency 0.333
+verdict: recency does NOT beat persistence (delta_f1 -0.0788 vs persistence, margin 0.005)
+challenger vs control: delta_f1 +0.0200 -> scoring beats random outsider picks
+replay_sha256: c7f6bcfe115b218342887afc7b4c4f68708bfe197af427b06907d81326936c96

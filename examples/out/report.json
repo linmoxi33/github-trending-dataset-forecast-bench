@@ -1,0 +1,338 @@
+{
+  "archive": {
+    "duplicates_dropped": [],
+    "first": "2026-11-11",
+    "last": "2026-11-15",
+    "period": "daily",
+    "skipped_files": [],
+    "snapshots": 5
+  },
+  "backtest": {
+    "macro": {
+      "control": {
+        "f1": 0.331704,
+        "hits": 16,
+        "precision": 0.348397,
+        "recall": 0.322756
+      },
+      "persistence": {
+        "f1": 0.43048,
+        "hits": 21,
+        "precision": 0.453526,
+        "recall": 0.416987
+      },
+      "recency": {
+        "f1": 0.351704,
+        "hits": 17,
+        "precision": 0.367628,
+        "recall": 0.34359
+      },
+      "velocity": {
+        "f1": 0.275891,
+        "hits": 13,
+        "precision": 0.278526,
+        "recall": 0.278526
+      }
+    },
+    "per_transition": [
+      {
+        "control": {
+          "f1": 0.454545,
+          "hits": 5,
+          "precision": 0.416667,
+          "recall": 0.5
+        },
+        "entrants": 5,
+        "from": "2026-11-11",
+        "k": 12,
+        "persistence": {
+          "f1": 0.454545,
+          "hits": 5,
+          "precision": 0.416667,
+          "recall": 0.5
+        },
+        "recency": {
+          "f1": 0.454545,
+          "hits": 5,
+          "precision": 0.416667,
+          "recall": 0.5
+        },
+        "reentries": 0,
+        "reserve": 2,
+        "to": "2026-11-12",
+        "truth_size": 10,
+        "velocity": {
+          "f1": 0.454545,
+          "hits": 5,
+          "precision": 0.416667,
+          "recall": 0.5
+        }
+      },
+      {
+        "control": {
+          "f1": 0.347826,
+          "hits": 4,
+          "precision": 0.4,
+          "recall": 0.307692
+        },
+        "entrants": 8,
+        "from": "2026-11-12",
+        "k": 10,
+        "persistence": {
+          "f1": 0.434783,
+          "hits": 5,
+          "precision": 0.5,
+          "recall": 0.384615
+        },
+        "recency": {
+          "f1": 0.347826,
+          "hits": 4,
+          "precision": 0.4,
+          "recall": 0.307692
+        },
+        "reentries": 0,
+        "reserve": 2,
+        "to": "2026-11-13",
+        "truth_size": 13,
+        "velocity": {
+          "f1": 0.26087,
+          "hits": 3,
+          "precision": 0.3,
+          "recall": 0.230769
+        }
+      },
+      {
+        "control": {
+          "f1": 0.08,
+          "hits": 1,
+          "precision": 0.076923,
+          "recall": 0.083333
+        },
+        "entrants": 9,
+        "from": "2026-11-13",
+        "k": 13,
+        "persistence": {
+          "f1": 0.24,
+          "hits": 3,
+          "precision": 0.230769,
+          "recall": 0.25
+        },
+        "recency": {
+          "f1": 0.16,
+          "hits": 2,
+          "precision": 0.153846,
+          "recall": 0.166667
+        },
+        "reentries": 1,
+        "reserve": 3,
+        "to": "2026-11-14",
+        "truth_size": 12,
+        "velocity": {
+          "f1": 0.24,
+          "hits": 3,
+          "precision": 0.230769,
+          "recall": 0.25
+        }
+      },
+      {
+        "control": {
+          "f1": 0.444444,
+          "hits": 6,
+          "precision": 0.5,
+          "recall": 0.4
+        },
+        "entrants": 7,
+        "from": "2026-11-14",
+        "k": 12,
+        "persistence": {
+          "f1": 0.592593,
+          "hits": 8,
+          "precision": 0.666667,
+          "recall": 0.533333
+        },
+        "recency": {
+          "f1": 0.444444,
+          "hits": 6,
+          "precision": 0.5,
+          "recall": 0.4
+        },
+        "reentries": 2,
+        "reserve": 2,
+        "to": "2026-11-15",
+        "truth_size": 15,
+        "velocity": {
+          "f1": 0.148148,
+          "hits": 2,
+          "precision": 0.166667,
+          "recall": 0.133333
+        }
+      }
+    ],
+    "reentry": {
+      "recall": {
+        "control": 0.0,
+        "persistence": 0.0,
+        "recency": 0.333333,
+        "velocity": 0.0
+      },
+      "truth_total": 3
+    },
+    "reserve": 0.2,
+    "transitions": 4,
+    "verdict": {
+      "beats_baseline": false,
+      "beats_control": true,
+      "best_baseline": "persistence",
+      "best_baseline_f1": 0.43048,
+      "challenger": "recency",
+      "delta_f1": -0.078776,
+      "delta_vs_control": 0.02,
+      "margin": 0.005
+    },
+    "window": 7
+  },
+  "cohort": {
+    "debuts": 26,
+    "max_streak": 5,
+    "median_days_present": 1.0,
+    "one_hit_repos": 22,
+    "re_entry_repos": 26,
+    "repos": 38,
+    "stayers": 5,
+    "top_reentry": [
+      {
+        "best_rank": 6,
+        "days_present": 2,
+        "debut": true,
+        "first_seen": "2026-11-13",
+        "last_seen": "2026-11-15",
+        "longest_streak": 1,
+        "one_hit": false,
+        "peak_stars_period": 151,
+        "re_entries": 2,
+        "repo": "QwenLM/qwen-code",
+        "stayer": false
+      },
+      {
+        "best_rank": 2,
+        "days_present": 2,
+        "debut": true,
+        "first_seen": "2026-11-12",
+        "last_seen": "2026-11-14",
+        "longest_streak": 1,
+        "one_hit": false,
+        "peak_stars_period": 278,
+        "re_entries": 2,
+        "repo": "ZhuLinsen/daily_stock_analysis",
+        "stayer": false
+      },
+      {
+        "best_rank": 7,
+        "days_present": 2,
+        "debut": true,
+        "first_seen": "2026-11-13",
+        "last_seen": "2026-11-15",
+        "longest_streak": 1,
+        "one_hit": false,
+        "peak_stars_period": 54,
+        "re_entries": 2,
+        "repo": "ashhart/TensorFold",
+        "stayer": false
+      },
+      {
+        "best_rank": 12,
+        "days_present": 1,
+        "debut": true,
+        "first_seen": "2026-11-13",
+        "last_seen": "2026-11-13",
+        "longest_streak": 1,
+        "one_hit": true,
+        "peak_stars_period": 415,
+        "re_entries": 1,
+        "repo": "Alishahryar1/free-claude-code",
+        "stayer": false
+      },
+      {
+        "best_rank": 4,
+        "days_present": 2,
+        "debut": true,
+        "first_seen": "2026-11-14",
+        "last_seen": "2026-11-15",
+        "longest_streak": 2,
+        "one_hit": false,
+        "peak_stars_period": 664,
+        "re_entries": 1,
+        "repo": "ChromeDevTools/chrome-devtools-mcp",
+        "stayer": false
+      },
+      {
+        "best_rank": 11,
+        "days_present": 1,
+        "debut": true,
+        "first_seen": "2026-11-13",
+        "last_seen": "2026-11-13",
+        "longest_streak": 1,
+        "one_hit": true,
+        "peak_stars_period": 298,
+        "re_entries": 1,
+        "repo": "CopilotKit/OpenBot",
+        "stayer": false
+      },
+      {
+        "best_rank": 1,
+        "days_present": 4,
+        "debut": true,
+        "first_seen": "2026-11-12",
+        "last_seen": "2026-11-15",
+        "longest_streak": 4,
+        "one_hit": false,
+        "peak_stars_period": 1925,
+        "re_entries": 1,
+        "repo": "GoogleChrome/modern-web-guidance-src",
+        "stayer": true
+      },
+      {
+        "best_rank": 10,
+        "days_present": 1,
+        "debut": true,
+        "first_seen": "2026-11-15",
+        "last_seen": "2026-11-15",
+        "longest_streak": 1,
+        "one_hit": true,
+        "peak_stars_period": 227,
+        "re_entries": 1,
+        "repo": "JuliusBrussee/caveman",
+        "stayer": false
+      },
+      {
+        "best_rank": 11,
+        "days_present": 2,
+        "debut": true,
+        "first_seen": "2026-11-14",
+        "last_seen": "2026-11-15",
+        "longest_streak": 2,
+        "one_hit": false,
+        "peak_stars_period": 420,
+        "re_entries": 1,
+        "repo": "Likely7/Veyra-NRVideo",
+        "stayer": false
+      },
+      {
+        "best_rank": 13,
+        "days_present": 1,
+        "debut": true,
+        "first_seen": "2026-11-15",
+        "last_seen": "2026-11-15",
+        "longest_streak": 1,
+        "one_hit": true,
+        "peak_stars_period": 33,
+        "re_entries": 1,
+        "repo": "Tencent/LoopForge",
+        "stayer": false
+      }
+    ]
+  },
+  "replay_sha256": "c7f6bcfe115b218342887afc7b4c4f68708bfe197af427b06907d81326936c96",
+  "tool": "trending-forecast-bench",
+  "version": "1.0.0"
+}
